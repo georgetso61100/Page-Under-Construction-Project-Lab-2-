@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Coming Soon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/countdownFunction.js" defer></script>
+    <script src="./assets/js/modalFuctions.js" defer></script>
+
+    <link href="./assets/css/timeStyle.css" rel="stylesheet">
+    <link href="./assets/css/socialIcons.css" rel="stylesheet">
+    <link href="./assets/css/button_form.css" rel="stylesheet">
+    <link href="./assets/css/headerStyle.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center" id="welcome">WEBSITE IS ALMOST READY</h1>
+    <p class="text-center" id="par">Our website is under construction. We'll be here soon.
+    <br> 
+    Subscribe to notified.</p>
+    <video autoplay muted loop>
+        <source src="./assets/video/background_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="container text-center countDownContainer">
+        <div class="row">
+            <div class="col-3 countDownLetters"></div>
+            <div class="col-3 countDownLetters"></div>
+            <div class="col-3 countDownLetters"></div>
+            <div class="col-3 countDownLetters"></div>
+        </div>
+        <div class="row">
+            <div class="col-3 dayTimeName">Days</div>
+            <div class="col-3 dayTimeName">Hours</div>
+            <div class="col-3 dayTimeName">Minutes</div>
+            <div class="col-3 dayTimeName">Seconds</div>
+        </div>
+        <div class="row socialIcons">
+            <div class="col-2"></div>
+            <div class="col-2">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://x.com/" target="_blank" class="fa fa-twitter"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+            </div>
+            <div class="col-2">
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    </br>
+    
+    <!-- Button trigger modal -->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-2" align="center">
+            <button type="button" class="btn-transparent" onclick="window.location.href='http://localhost:3000/c:/Users/georg/Desktop/my%20countdown/countdownSite/countdownSite2/index2.html'">
+                HOME
+             </button>
+        </div>
+        <div class="col-2" align="center">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal1" class="btn-transparent">
+                Subscibe now
+             </button>
+        </div>
+        <div class="col-2" align="center">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn-transparent">
+               Contact Us
+            </button>
+        </div>
+        <div class="col-3"></div>
+    </div>  
+    <!-- Modal1 -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                            <div class="invalid-feedback">
+                                First name is required    
+                            </div>    
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dateOfBirth" class="form-label">Date Of Birth</label>
+                            <input type="date" class="form-control" id="dateOfBirth" required>
+                            <div class="invalid-feedback">
+                                    Date of Birth is required    
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <label for="surname" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="surname" required>
+                            <div class="invalid-feedback">
+                                    Surname is required    
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select class="form-select" id="gender" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Gender.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="street" class="form-label">Street</label>
+                            <input type="text" class="form-control" id="street" required>
+                            <div class="invalid-feedback">
+                                Street name is required    
+                            </div>    
+                        </div>
+                        <div class="col-md-6" id="Army">
+                            <label for="armyServices" class="form-label">Army Services</label>
+                            <select class="form-select" id="armyServices" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="streetNumber" class="form-label">Street Number</label>
+                            <input type="text" class="form-control" id="streetNumber" required>
+                            <div class="invalid-feedback">
+                                Street Number is required    
+                            </div>    
+                        </div>
+                        <div class="col-md-6" id="endOfArmy">
+                            <label for="endOfArmyServices" class="form-label">End Of ArmyS ervices</label>
+                            <input type="date" class="form-control" id="endOfArmyServices" required>
+                            <div class="invalid-feedback">
+                                End of Army Services is required    
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" required>
+                            <div class="invalid-feedback">
+                                City name is required    
+                            </div>    
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-check-label" for="creditCard">
+                                Credit Card
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="creditCard">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="state" class="form-label">State</label>
+                            <input type="text" class="form-control" id="state" required>
+                            <div class="invalid-feedback">
+                                State is required    
+                            </div>    
+                        </div>
+                        <div class="col-md-6" id="loanPosition">
+                            <label class="form-check-label" for="loan">
+                                Loan
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="loan">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="relationShipStatus" class="form-label">Relationship Status</label>
+                            <select class="form-select" id="relationShipStatus" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Married</option>
+                                <option>Single</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Relationship status.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="education" class="form-label">Education</label>
+                            <select class="form-select" id="education" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Primary</option>
+                                <option>Gymnasium</option>
+                                <option>Lyceum</option>
+                                <option>University</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Education.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-check-label" for="childsCheckBox">
+                                Childs
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="childsCheckBox">
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                        <div class="col-md-6" id="parentNumberOfChilds">
+                            <label for="numberOfChilds" class="form-label">Number of childs</label>
+                            <input type="number" class="form-control" id="numberOfChilds" required>
+                            <div class="invalid-feedback">
+                                Number of childs is required
+                            </div>
+                        </div>   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal2 -->
+<div class="modal fade" id="contactModal1" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="container mt-5">
+                <iframe src="http://eepurl.com/iUcO6g" width="470" height="720">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<p id="copyrights" class="text-center">
+    ©️Designed by <a href='https://www.linkedin.com/in/george-tsompanidis-7b04a2174' target="_blank"> George Tsompanidis</a>
+    <br>
+    All rights reserved
+    </p>
+</body>
+</html>
+
+
